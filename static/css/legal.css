@@ -1,0 +1,16 @@
+article section {
+    width: 650px
+}
+
+article section h3 {
+    border: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 650px) {
+    article section {
+        width: 95%;
+    }
+}
