@@ -20,6 +20,8 @@
     gap: 0.6rem;
     color: var(--secondary-color);
     font-size: 1rem;
+    white-space: pre;
+    word-wrap: break-word;
 }
 
 .breadcrumb-nav .breadcrumb-list swiper-slide .breadcrumb:after {
@@ -42,7 +44,7 @@
 swiper-slide { width:auto; margin: 0 8px 0 0}
 
 .heading-banner {
-    height: 320px;
+    height: 230px;
     width: 100%;
     position: relative;
     display: flex;
@@ -188,5 +190,7 @@ footer {
     .section-context .float-img-left img, .section-context .float-img-right img {
         width: 100%;
         height: auto;
+        box-shadow: none;
+        border-radius: 2px;
     }
 }

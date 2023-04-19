@@ -43,6 +43,7 @@ body {
     font-family: BlinkMacSystemFont,  "Roboto",'Noto Sans', "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 100%;
     text-rendering: optimizeSpeed;
+    overflow-x: hidden !important;
 }
 
 /* A elements that don't have a class get default styles */

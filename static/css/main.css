@@ -188,6 +188,10 @@ header {
     width: 100%;
     display: none;
     border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--text-color);
+    top: -3px;
 }
 
 .mobile-header #mobile-nav {
@@ -273,7 +277,7 @@ header {
 
 .mobile-menu-wrapper .mobile-menu li a.active {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .mobile-menu-wrapper .mobile-menu li .navigate-icon.active {
@@ -999,7 +1003,9 @@ footer {
 /* for mobile */
 @media screen and (max-width: 520px) {
     .banner {
-        height: 450px;
+        position: relative;
+        height: 408px;
+        top: 33px;
     }
 
     .banner .banner-left-side .title {
@@ -1039,7 +1045,9 @@ footer {
 
     .inner-section picture img {
         border: none;
-        max-height: none;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .enterprise-section .inner-section {
@@ -1067,7 +1075,7 @@ footer {
     }
     .engineering-banner {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/banner/engineering-1.jpg);
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
     }
     .maintenance-banner {
