@@ -28,8 +28,8 @@
     background-color: #4f4d4d;
     content: " ";
     height: 12px;
-    mask-image: url(/static/media/icons/arrow-filled.svg);
-    -webkit-mask-image: url(/static/media/icons/arrow-filled.svg);
+    mask-image: url(../media/icons/arrow-filled.svg);
+    -webkit-mask-image: url(../media/icons/arrow-filled.svg);
     mask-size: 12px;
     -webkit-mask-size: 12px;
     width: 12px;
