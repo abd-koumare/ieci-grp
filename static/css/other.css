@@ -1,10 +1,35 @@
-
+.breadcrumb-nav {
+    position: relative;
+}
 .breadcrumb-nav .breadcrumb-list {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     height: 100%;
+}
+
+.breadcrumb-nav .swipeable-alerter {
+    background: white;
+    width: 80px;
+    height: 24px;
+    position: absolute;
+    right: -1px;
+    z-index: 1000;
+}
+
+.breadcrumb-nav  .swipeable-alerter .direction-icon {
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-position: center;
+    background-image: url("../media/icons/direction.svg");
+    fill: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    animation: 1s linear 3s infinite forwards fadeOutRight;
 }
 
 .breadcrumb-nav .breadcrumb-list /* Put 1rem space between every link */
@@ -193,5 +218,18 @@ footer {
         height: auto;
         box-shadow: none;
         border-radius: 2px;
+    }
+}
+
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        left: 8px;
+    }
+
+    to {
+        opacity: 0;
+        left: 30px;
     }
 }

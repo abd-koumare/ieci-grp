@@ -1061,6 +1061,8 @@ footer {
 
     .legal-container .legal-list li a {
         font-size: 14px;
+        white-space: pre;
+        text-decoration: underline;
     }
 
     .parking-banner {

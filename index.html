@@ -13,8 +13,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="Découvrez IECI, une société ivoirienne experte en Management et Ingénierie pour la réalisation clés en main de projets industriels multidisciplinaires. Des solutions sur mesure pour votre entreprise dans divers secteurs d'activités.">
-    <meta name="keywords" content="IECI, société ivoirienne, Management, Ingénierie, projets industriels, clés en main, ingénieurs qualifiés, logiciels de calcul, Groupe CERI, plateforme industrielle, optimisation, revamping, Pétrole & Gaz, Industrie chimique, Cimenterie, dépôt de stockage d’hydrocarbures, GPL, Centrale électrique, énergie renouvelable, Station de pompage, Pipeline">
+    <meta name="description"
+          content="Découvrez IECI, une société ivoirienne experte en Management et Ingénierie pour la réalisation clés en main de projets industriels multidisciplinaires. Des solutions sur mesure pour votre entreprise dans divers secteurs d'activités.">
+    <meta name="keywords"
+          content="IECI, société ivoirienne, Management, Ingénierie, projets industriels, clés en main, ingénieurs qualifiés, logiciels de calcul, Groupe CERI, plateforme industrielle, optimisation, revamping, Pétrole & Gaz, Industrie chimique, Cimenterie, dépôt de stockage d’hydrocarbures, GPL, Centrale électrique, énergie renouvelable, Station de pompage, Pipeline">
     <meta name="robots" content="index, follow">
     <meta name="canonical" content="https://www.ieci-groupe.com/">
 
@@ -90,7 +92,7 @@
             </ol>
         </nav>
     </div>
-    
+
     <div class="mobile-header">
         <nav id="mobile-nav" class="has_shadow">
             <a class="brand-content" href="index.html"><img src="static/media/logo/logo-ieci.svg" alt="IECI"></a>
@@ -268,7 +270,8 @@
     </div>
     <div class="section partners-content-wrapper primary-section">
         <div class="container">
-            <swiper-container slides-per-view="4" space-between="30" autoplay-delay="1500">
+            <swiper-container id="partners-swiper-container" slides-per-view="4" space-between="30"
+                              autoplay-delay="1500">
                 <swiper-slide>
                     <div class="logo-block">
                         <img src="static/media/partners/gestoci.png" alt="GESTOCI"/>
@@ -487,5 +490,24 @@
 </footer>
 <script type="text/javascript" src="static/js/main.js"></script>
 <script type="text/javascript" src="static/lib/js/swiper-element-bundle.min.js"></script>
+<script>
+    // Get the slide container element
+    var slideContainer = document.getElementById('partners-swiper-container');
+
+    // Function to update slide per view attribute
+    function updateSlidePerView() {
+        if (window.innerWidth <= 520) {
+            slideContainer.setAttribute('slides-per-view', '3');
+        } else {
+            slideContainer.setAttribute('slides-per-view', '4');
+        }
+    }
+
+    // Initial call to update slide per view attribute
+    updateSlidePerView();
+    // Event listener for window resize
+    window.addEventListener('resize', updateSlidePerView);
+
+</script>
 </body>
 </html>

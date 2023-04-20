@@ -35,52 +35,7 @@ deactivateMenuAtClickBtn.forEach(function (el) {
 })
 
 
-/**
 
- const breadcrumbContainer = document.createElement('div');
- breadcrumbContainer.style.position = 'fixed';
- breadcrumbContainer.style.bottom = '10px';
- breadcrumbContainer.style.right = '10px';
- breadcrumbContainer.style.backgroundColor = '#fff';
- breadcrumbContainer.style.padding = '10px';
- document.body.appendChild(breadcrumbContainer);
- var sections = document.querySelectorAll('.section-content');
-
- // Loop through each section
- sections.forEach((section) => {
-    // Get the section's ID
-    const sectionId = section.getAttribute('id');
-
-    // Create a new breadcrumb element
-    const breadcrumb = document.createElement('span');
-    breadcrumb.innerHTML = ` > ${sectionId}`;
-
-    // Insert the breadcrumb into the breadcrumb container
-    breadcrumbContainer.appendChild(breadcrumb);
-});
- // Add an event listener for scrolling
- window.addEventListener('scroll', () => {
-
-    // Loop through each section
-    sections.forEach((section) => {
-        // Get the section's ID
-        const sectionId = section.getAttribute('id');
-
-        // Check if the section is currently in view
-        if (section.getBoundingClientRect().top <= window.innerHeight / 2) {
-            // Loop through each breadcrumb and update its style
-            const breadcrumbs = breadcrumbContainer.querySelectorAll('span');
-            breadcrumbs.forEach((breadcrumb) => {
-                breadcrumb.style.fontWeight = 'normal';
-            });
-
-            // Find the breadcrumb for the current section and update its style
-            const breadcrumbsArray = Array.from(breadcrumbs);
-            const currentBreadcrumb = breadcrumbsArray.find((breadcrumb) => breadcrumb.textContent.includes(sectionId));
-            currentBreadcrumb.style.fontWeight = 'bold';
-        }
-    });
-}) */
 
 
 const GA_MEASUREMENT_ID =  'G-5TJ6JV3KNZ';
