@@ -168,6 +168,7 @@ footer {
     .banner-content .title {
         font-size: 30px;
         overflow-wrap: break-word;
+        margin-top: 67px;
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }

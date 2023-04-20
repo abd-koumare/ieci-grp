@@ -266,12 +266,12 @@ header {
 }
 
 .mobile-menu-wrapper .mobile-menu li .navigate-icon {
-    background-image: url("/static/media/icons/arrow.svg");
+    background-image: url("../media/icons/arrow.svg");
 
 }
 
 .mobile-menu-wrapper .mobile-menu li .direction-icon {
-    background-image: url("/static/media/icons/direction.svg");
+    background-image: url("../media/icons/direction.svg");
     transform: rotate(90deg);
 }
 
