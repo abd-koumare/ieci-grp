@@ -88,6 +88,9 @@
                     </a>
                 </swiper-slide>
             </swiper-container>
+            <div class="swipeable-alerter">
+                <span class="direction-icon"></span>
+            </div>
         </nav>
     </div>
     <div class="mobile-header">
@@ -284,6 +287,18 @@
         </div>
     </div>
 </footer>
+
+<style>
+    .swipeable-alerter {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .swipeable-alerter {
+            display: block;
+        }
+    }
+</style>
 <script type="text/javascript" src="static/js/main.js"></script>
 <script type="text/javascript" src="static/lib/js/swiper-element-bundle.min.js"></script>
 </body>
