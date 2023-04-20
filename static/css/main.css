@@ -1015,7 +1015,9 @@ footer {
     .banner .banner-left-side .description {
         padding: 1rem;
     }
-
+    .banner .banner-right-side {
+        padding: 0;
+    }
     .banner .banner-right-side img {
         display: none;
     }
