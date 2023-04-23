@@ -56,6 +56,7 @@ if (cookieAccepted) {
     // User has not yet accepted cookies, show the cookie agreement modal
     const cookieModal = document.getElementById('cookie-modal');
     cookieModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 
     const acceptButton = document.getElementById('accept-cookies');
     acceptButton.addEventListener('click', () => {
@@ -65,6 +66,7 @@ if (cookieAccepted) {
 
         // Close the modal
         cookieModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
     });
 
     const declineButton = document.getElementById('decline-cookies');
@@ -74,6 +76,7 @@ if (cookieAccepted) {
         localStorage.setItem('cookieAccepted', false);
         // Close the modal
         cookieModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
     });
 }
 
