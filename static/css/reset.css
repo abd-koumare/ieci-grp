@@ -44,6 +44,18 @@ body {
     font-size: 100%;
     text-rendering: optimizeSpeed;
     overflow-x: hidden !important;
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+input[type="text"],
+textarea, p, li, a, span, h2, h3, h4 {
+    -webkit-user-select: text; /* Safari/Chrome */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text; /* Non-prefixed version, currently supported by most modern browsers */
 }
 
 /* A elements that don't have a class get default styles */

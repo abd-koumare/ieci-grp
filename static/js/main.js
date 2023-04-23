@@ -25,6 +25,12 @@ document.addEventListener('click', function (event) {
 });
 
 
+document.querySelector('.contact-btn').addEventListener('click', function(e){
+    hamburgerBtn.classList.remove('is_activated');
+    mobileNavigation.classList.toggle("has_shadow");
+})
+
+
 // Closing the menu when the menu anchor link is clicked
 var deactivateMenuAtClickBtn = document.querySelectorAll('.close-mobile-menu-trg');
 
