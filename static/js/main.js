@@ -44,7 +44,7 @@ deactivateMenuAtClickBtn.forEach(function (el) {
 
 
 
-const GA_MEASUREMENT_ID =  'G-5TJ6JV3KNZ';
+const GA_MEASUREMENT_ID =  'G-YRBM8RCZPW';
 const GA_MEASUREMENT_URL = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
 // Check if the user has previously accepted cookies
 const cookieAccepted = localStorage.getItem('cookieAccepted');
